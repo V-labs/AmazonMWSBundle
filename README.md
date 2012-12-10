@@ -1,7 +1,7 @@
 Amazon MWS Bundle
 =================
 
-This bundle provides a Symfony2 service under the Amazon MWS SDK.
+This bundle provides a Symfony2 service for the Amazon MWS PHP SDK.
 
 Installation
 ------------
@@ -10,6 +10,9 @@ Add the reference into your composer.json :
 
     "vlabs/amazon-mws-bundle": "dev-master"
 
+Enable the bundle in your AppKernel.php
+
+    new Vlabs\AmazonMWSBundle\VlabsAmazonMWSBundle(),
 
 Configuration
 -------------
