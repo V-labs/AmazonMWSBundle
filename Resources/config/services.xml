@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="vlabs_amazon_mws.client.class">Vlabs\AmazonMWSBundle\MWSClient</parameter>
+    </parameters>
+
+    <services>
+        <service id="vlabs_amazon_mws.client" class="%vlabs_amazon_mws.client.class%">
+            <call method="setConfig">
+                <argument>%vlabs_mws.config%</argument>
+            </call>
+        </service>
+    </services>
+    
+</container>
